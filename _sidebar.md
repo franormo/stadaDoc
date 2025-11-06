@@ -1,0 +1,8 @@
+- [Inicio](README.md)
+- [Proceso de liquidación](/liquidacion/)
+    - [Configuración](/liquidacion/configuracion.md)
+    - [Funcionamiento](/liquidacion/funcionamiento.md)
+- [Mayoristas](/mayoristas/)
+    - [Federacion](/mayoristas/federacion/)
+    - [Alliance](/mayoristas/alliance/)
+- [Glosario](glosario.md)

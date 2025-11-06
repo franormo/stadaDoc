@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wiki Técnica</title>
+  
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css" />
+  <style>
+    button.sidebar-toggle {
+      bottom: inherit;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">Cargando...</div>
+
+  <script>
+    window.$docsify = {
+      name: 'Liquidaciones STADA',
+      loadSidebar: true,
+      executeScript: true,
+      routerMode: 'hash',
+      sidebarDisplayLevel: 0,
+      subMaxLevel: 3,
+      plugins: [
+        function (hook, vm) {
+          hook.doneEach(function () {
+            if (location.hash.includes('glosario.md')) {
+              fetch('glosario.json')
+                .then(res => res.json())
+                .then(data => {
+                  const container = document.getElementById('glosario-content');
+                  if (container) {
+                    container.innerHTML = Object.entries(data).map(([term, def]) => 
+                      `<h3 id="${term}">${term}</h3><p>${def}</p>`
+                    ).join('');
+                  }
+                });
+            }
+          });
+        }
+      ]
+    };
+  </script>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-theme-switcher@1/dist/theme-switcher.min.js"></script>
+</body>
+</html>

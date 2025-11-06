@@ -1,0 +1,12 @@
+{
+  "Mayorista": "Cada una de las empresas encargadas de distribuir los productos a los socios.",
+  "Socio": "Consumidores de productos de stada, farmacias, hospitales...",
+  "Módulo": "Cada uno de los paquetes software del sistema de liquidación automática.",
+  "Módulo 1": "Módulo encargado de transformar los ficheros proporcionados por los mayoristas para adaptarse al proceso estandarizado de liquidación.",
+  "Módulo 2": "Módulo encargado de agrupar las líneas de venta en distintos clubs, a los que se les asignarán después las condiciones comerciales para el cálculo de los descuentos y los costes de gestión.",
+  "Módulo 3": "Módulo encargado de calcular, según el club asignado y las condiciones comerciales definidas, el descuento que corresponde a cada línea de venta.",
+  "Módulo 4": "Módulo encargado de calcular, según las condiciones definidias, los costes de gestión asociados a cada línea de venta",
+  "Módulo 5": "Módulo encargado de agrupar la información generada en los módulos anteriores para generar datos preparados para su consumo en cuadros de mando o informes.",
+  "Club y subClub": "Agrupaciones de ventas que comparten las mismas condiciones comerciales, ya sea de descuentos o de costes de gestión.",
+  "Material": "Cada uno de los productos que son susceptibles de entrar en una línea de venta en el proceso de liquidación, medicamentos, aparátos de medición, expositores de productos..."
+}
